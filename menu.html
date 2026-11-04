@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menu Zamzam Cafe & Shisha Lounge — hidangan Timur Tengah, sajian cafe, minuman, dan dessert untuk menemani momen Anda.">
+
+  <title>Menu — Zamzam Cafe & Shisha Lounge</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="menu-page">
+
+  <!-- NAVBAR -->
+  <header class="navbar scrolled" id="navbar" role="banner">
+    <div class="container">
+
+      <a href="index.html" class="nav-brand" aria-label="Zamzam Cafe & Shisha Lounge — Beranda">
+        <span class="nav-brand-name">ZAMZAM</span>
+        <span class="nav-brand-sub">Cafe & Shisha Lounge</span>
+      </a>
+
+      <nav class="nav-links" role="navigation" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="index.html#tentang">Tentang</a>
+        <a href="menu.html" class="active" aria-current="page">Menu</a>
+        <a href="index.html#tennis">Tennis Court</a>
+        <a href="index.html#lokasi">Lokasi</a>
+        <a href="index.html#reservasi">Reservasi</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="index.html#reservasi" class="btn">Reservasi Meja</a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Navigasi mobile">
+    <a href="index.html">Beranda</a>
+    <a href="index.html#tentang">Tentang</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="index.html#tennis">Tennis Court</a>
+    <a href="index.html#lokasi">Lokasi</a>
+    <a href="index.html#reservasi">Reservasi</a>
+    <a href="index.html#reservasi" class="btn btn-primary" style="margin-top: 1rem;">
+      Reservasi Meja
+    </a>
+  </div>
+
+  <main>
+
+    <!-- MENU HERO -->
+    <section class="menu-hero">
+      <div class="container">
+
+        <div class="menu-hero-content">
+          <span class="label">Menu Zamzam</span>
+
+          <h1 class="menu-hero-heading">
+            Rasa yang Mengundang<br>
+            <span>untuk Dinikmati Bersama.</span>
+          </h1>
+
+          <p class="menu-hero-desc">
+            Jelajahi pilihan hidangan Timur Tengah, sajian cafe,
+            minuman, dan dessert yang disiapkan dengan sepenuh hati.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MENU CATALOG: DATA DARI SANITY CMS -->
+    <section class="menu-catalog" aria-label="Daftar menu">
+      <div class="container">
+
+        <div id="menu-catalog-content">
+          <p class="section-desc">Memuat daftar menu...</p>
+        </div>
+
+        <!-- MENU NOTE -->
+        <div class="menu-note">
+          <span class="label">Catatan</span>
+          <p>
+            Harga belum termasuk pajak dan service.
+            Ketersediaan menu dapat berubah.
+            Silakan hubungi kami untuk informasi alergi dan reservasi.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MENU DETAIL MODAL -->
+  <div
+    class="modal menu-detail-modal"
+    id="menu-detail-modal"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="menu-detail-title"
+  >
+
+    <div class="modal-backdrop js-close-menu-detail"></div>
+
+    <div class="modal-box menu-detail-box">
+
+      <button
+        type="button"
+        class="modal-close js-close-menu-detail"
+        aria-label="Tutup detail menu"
+      >
+        ×
+      </button>
+
+      <div class="menu-detail-image">
+        <img id="menu-detail-image" src="" alt="">
+      </div>
+
+      <div class="menu-detail-content">
+
+        <span class="label" id="menu-detail-category"></span>
+
+        <h2 class="modal-title" id="menu-detail-title"></h2>
+
+        <p
+          class="menu-detail-description"
+          id="menu-detail-description"
+        ></p>
+
+        <span
+          class="menu-detail-price"
+          id="menu-detail-price"
+        ></span>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="kontak" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-col">
+          <div class="footer-brand-name">ZAMZAM</div>
+          <div class="footer-brand-sub">Cafe & Shisha Lounge</div>
+
+          <p class="footer-brand-desc">
+            Cita rasa Timur Tengah, hospitality yang hangat,
+            dan ruang untuk menciptakan momen yang berkesan.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigasi</h4>
+          <a href="index.html">Beranda</a>
+          <a href="menu.html">Menu</a>
+          <a href="index.html#tennis">Tennis Court</a>
+          <a href="index.html#lokasi">Lokasi</a>
+          <a href="index.html#reservasi">Reservasi</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Kontak</h4>
+          <p>Jakarta, Indonesia</p>
+          <a href="tel:+622100000000">+62 21 0000 0000</a>
+          <a href="mailto:hello@zamzam.example">hello@zamzam.example</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Jam Operasional</h4>
+
+          <div class="footer-hours">
+            <strong>Buka Setiap Hari</strong>
+            11.00–23.59 WIB
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="footer-copyright">
+          © <span id="current-year">2026</span>
+          Zamzam Cafe & Shisha Lounge. Hak cipta dilindungi.
+        </p>
+
+        <div class="footer-legal">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Syarat & Ketentuan</a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/script.js"></script>
+  <script src="js/menu.js"></script>
+
+</body>
+</html>
